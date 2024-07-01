@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($conn->query($sql) === TRUE) {
         // Redirect ke halaman sukses setelah berhasil registrasi
-        header("Location: index2.html");
+        header("Location: login.html");
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
